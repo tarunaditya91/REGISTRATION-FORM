@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact form</title>
+    <link rel="stylesheet" href="contactform.css">
+    <style>
+        body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 8px;
+    
+    
+
+}
+input[type="submit"]
+{
+    background-color: green;
+    color:white;
+    padding : 12px 20px;
+    border-radius:5px;
+    margin: 15px;
+}
+.heading{
+    background-color: green;
+    color: white;
+}
+.hi{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: beige;
+    padding: 12px;
+    
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+    
+*{
+    box-sizing: border-box;
+}
+    </style>
+</head>
+<body>
+    <div class="hi">
+        <p>
+            <h1 >REGISTRATION FORM </h1>
+            <h3 >please fill all the text in the fields.</h3>
+            <hr> 
+        </p> 
+        <p>
+            Your Name:
+            <input type="text" name="name" id="name" placeholder="Your Name">
+        </p>
+        <p>
+            Your Email:
+            <input type="email" name="email" id="email" placeholder="Valid Email Address">
+        </p>
+        <p>
+            Message:
+            <textarea name="message" id="message" cols="10" rows="10" placeholder="Your Message to Us"></textarea>
+        </p>
+        <p>
+            Subject:
+            <input type="text" name="subj" id="subj" placeholder="Job Inquiry">
+        </p>
+        <input type="submit" value="Send">
+    </div>
+</body>
+</html>
